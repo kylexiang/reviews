@@ -8,3 +8,8 @@ with open ("read(data)","r") as file:
 			print(len(data));
 for i in data:
 	print(i,"\n--------------------------------");
+a = 0;
+for i in data:
+	a += len(i);
+print("资料总长度为",a);
+print("资料平均长度为",(a / len(data)));
